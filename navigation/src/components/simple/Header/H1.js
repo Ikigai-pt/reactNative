@@ -8,7 +8,7 @@ export default (H1 = ({ title }) => {
 const styles = StyleSheet.create({
   title: {
     fontSize: 48,
-    color: "black",
+    color: "white",
     fontFamily: "Roboto-Thin"
   }
 });

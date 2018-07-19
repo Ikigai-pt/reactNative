@@ -7,10 +7,8 @@ export default (H3 = ({ title }) => {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 24,
-    marginTop: 20,
-    color: "#4F4F4F",
-    fontFamily: "Roboto-Light",
-    textDecorationStyle: "dotted"
+    fontSize: 18,
+    color: "white",
+    fontFamily: "Roboto-Thin"
   }
 });

@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import Icon from "react-native-vector-icons/Ionicons";
 
-import { PlainButton, H1, H3 } from "../components";
+import { PlainButton, H1, H3 } from "../components/simple";
 
 const { width, height } = Dimensions.get("window");
 
@@ -41,7 +41,7 @@ class LoginScreen extends Component {
       ]
     };
     const renderSignUpPanel = (
-      <View style={styles.signUpPanel}>
+      <View style={styles.socialLogin}>
         <PlainButton
           title="Sign in with Facebook"
           clickHandler={() => this.props.navigation.navigate("Main")}
@@ -61,13 +61,15 @@ class LoginScreen extends Component {
               <Icon
                 name="ios-list"
                 size={80}
-                color="black"
+                color="white"
                 style={{ padding: 10 }}
               />
               <H1 title="J o t" />
             </View>
-            <H3 title="Plan . Execute . Habit " />
-            <H3 title="Sign up" />
+            <View style={styles.registerPanel}>
+              <H3 title="SIGN IN" />
+              <H3 title="SIGN UP" />
+            </View>
           </View>
         </Animated.View>
         {renderSignUpPanel}
@@ -84,8 +86,8 @@ const styles = StyleSheet.create({
   },
   logoContainer: {
     flexDirection: "column",
-    backgroundColor: "#F2C94C",
-    justifyContent: "center",
+    backgroundColor: "#34343B",
+    justifyContent: "space-between",
     alignItems: "center",
     elevation: 5,
     position: "relative",
@@ -94,13 +96,23 @@ const styles = StyleSheet.create({
   logoStyle: {
     flexDirection: "row",
     justifyContent: "center",
-    alignItems: "center"
+    alignItems: "center",
+    marginTop: "75%"
   },
-  signUpPanel: {
+  registerPanel: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-around",
+    backgroundColor: "#8c88ff",
+    padding: 10,
+    width: "100%"
+  },
+  socialLogin: {
     flex: 1,
     marginTop: "-100%",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#1D1D25",
     zIndex: -1
   }
 });

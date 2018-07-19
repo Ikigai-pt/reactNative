@@ -3,6 +3,7 @@ import { createBottomTabNavigator } from "react-navigation";
 import HomeScreen from "../screens/HomeScreen";
 import ChatScreen from "../screens/BotScreen";
 import LoginScreen from "../screens/LoginScreen";
+import PlanScreen from "../screens/PlanScreen";
 
 const MainStackNavigator = createBottomTabNavigator(
   {
@@ -11,6 +12,9 @@ const MainStackNavigator = createBottomTabNavigator(
     },
     Chat: {
       screen: ChatScreen
+    },
+    Plan: {
+      screen: PlanScreen
     }
   },
   {

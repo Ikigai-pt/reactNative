@@ -12,7 +12,7 @@ export default (PlainButton = ({ title, clickHandler }) => {
 const styles = StyleSheet.create({
   button: {
     fontSize: 20,
-    color: "black",
+    color: "white",
     fontFamily: "Roboto-Light",
     padding: 16
   }

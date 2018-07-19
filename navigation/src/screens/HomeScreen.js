@@ -1,7 +1,10 @@
 import React, { Component } from "react";
 import { View, Text, Button, StyleSheet } from "react-native";
-
 import Icon from "react-native-vector-icons/Ionicons";
+
+import { makeStyleFromTheme } from "../util/theme_utils";
+import { SummaryPanel, NavBar } from "../components/compound/index";
+
 class HomeScreen extends Component {
   static navigationOptions = {
     tabBarLabel: null,
@@ -11,9 +14,14 @@ class HomeScreen extends Component {
   };
 
   render() {
+    const styles = createStyleSheet("darknight");
     return (
-      <View>
-        <Text> Home Screen </Text>
+      <View style={styles.container}>
+        <NavBar />
+        <SummaryPanel />
+        <View style={styles.items}>
+          <Text> Items </Text>
+        </View>
         <Button
           title="Chat screen"
           onPress={() => this.props.navigation.navigate("Chat")}
@@ -23,11 +31,22 @@ class HomeScreen extends Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "red"
-  }
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor:
+//   },
+// });
+const createStyleSheet = makeStyleFromTheme(theme => {
+  return {
+    container: {
+      flex: 1,
+      backgroundColor: theme.color.primary.base
+    },
+    items: {
+      flex: 7
+    }
+  };
 });
 
 export default HomeScreen;

@@ -82,3 +82,18 @@
 #### RN Animation
 - https://animationbook.codedaily.io/introduction/
 - https://codedaily.io/screencasts
+- https://codeburst.io/react-native-nine-animation-screencast-tutorials-9d031e8bb86f
+
+
+### Implement Theme
+- https://reactjs.org/docs/context.html
+- https://www.terrydiederich.com/changing-style-as-state-changes-in-react-native/
+- https://blog.producthunt.com/product-hunt-mobile-theme-with-redux-in-react-native-part-ii-49b9448040ce
+- https://blog.benestudio.co/themes-in-react-native-16b4b0a33ed
+- https://blog.callstack.io/react-theme-provider-the-easiest-way-to-use-multiple-themes-in-your-app-cf126734e01c
+
+### Examples 
+- https://reactnativeexample.com/
+
+### Blog
+- https://www.appticles.com/blog/2018/05/building-ios-and-android-apps-with-react-native/
